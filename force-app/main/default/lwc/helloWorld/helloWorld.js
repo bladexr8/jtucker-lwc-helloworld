@@ -1,4 +1,6 @@
 import { LightningElement, track } from 'lwc';
+import { getValue, incrementValue } from 'c/common';
+
 export default class HelloWorld extends LightningElement {
 
   contacts = [
@@ -38,6 +40,10 @@ export default class HelloWorld extends LightningElement {
 
   changeHandler(event) {
     this.greeting = event.target.value;
+    incrementValue();
+    const value = getValue();
+    window.console.log('HelloWorld');
+    window.console.log(value);
   }
 
   handleShowChange() {
