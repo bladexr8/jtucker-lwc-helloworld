@@ -1,8 +1,21 @@
 <template>
     <lightning-card title="HelloWorld" icon-name="custom:custom14">
       <div class="slds-m-around_medium">
-        <p>Hello, {greeting}!</p>
-        <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        <template if:true={showing}>
+          <p>Conditional Content</p>
+          <p>Hello, {greeting}!</p>
+          <p>Hello, {greetingUpper}!</p>
+          <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        </template>
+        <lightning-input checked={showing} type="checkbox" label="Show Conditional Content" onchange={handleShowChange}></lightning-input>
+      </div>
+      <div class="slds-m-around_medium">
+        <template for:each={contacts} for:item="contact">
+          <li key={contact.id}>
+            {contact.name}, {contact.title}
+          </li>
+        </template>
+        <lightning-button variant="base" label="Base" title="Base action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
       </div>
     </lightning-card>
   </template>

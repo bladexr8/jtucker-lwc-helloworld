@@ -1,7 +1,7 @@
 # John Tucker: Lightning Web Component Series
-Part 1 - https://john-tucker.medium.com/exploring-salesforce-lightning-web-components-part-1-efb2b7b0570
-Part 2 - https://john-tucker.medium.com/exploring-salesforce-lightning-web-components-part-2-5981d1472585
-Part 3 - https://john-tucker.medium.com/exploring-salesforce-lightning-web-components-part-3-7bb31d278390
+- Part 1 - https://john-tucker.medium.com/exploring-salesforce-lightning-web-components-part-1-efb2b7b0570
+- Part 2 - https://john-tucker.medium.com/exploring-salesforce-lightning-web-components-part-2-5981d1472585
+- Part 3 - https://john-tucker.medium.com/exploring-salesforce-lightning-web-components-part-3-7bb31d278390
 
 # Salesforce DX Project: Next Steps
 
